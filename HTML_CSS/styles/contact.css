@@ -1,0 +1,19 @@
+.contact-grid-wrapper{
+	width: 1000px;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-gap: 100px;
+}
+
+.contact-grid-wrapper > .company-left-sidebar > .left-logo img{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.contact-grid-wrapper > .company-left-sidebar > .company-details-wrapper{
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0 20px 0;
+	align-items: center;
+	font-size: 1.0em
+}

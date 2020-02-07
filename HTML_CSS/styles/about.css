@@ -1,0 +1,96 @@
+/* Skewed-header*/
+.skewed-header {
+	position: relative;
+	height: 400px;
+	overflow: hidden;
+}
+
+.skewed-header > .header-bg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	transform: skewY(-6deg);
+	transform-origin: top left;
+	filter: brightness(50%);
+}
+
+.skewed-header > .skewed-header-wrapper {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+}
+
+.skewed-header > .skewed-header-wrapper > .skewed-header-content{
+	width: 1000px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.skewed-header > .skewed-header-wrapper > .skewed-header-content > .heading-wrapper {
+	background-color: #cea135;
+	color: #11122b;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	padding: 10px 10px 10px 10px;
+} 
+
+.page-content{
+	padding: 20px;
+}
+
+.fries-image-wrapper{
+	display: flex;
+	justify-content: center;
+}
+
+.fries-image-wrapper > .fries-image-squares{
+	width: 1000px;
+}
+
+.fries-image-square > .img-wrapper img{
+	width:100%;
+	height: 500px;
+	object-fit: cover;
+}
+
+.fries-image-squares > .fries-image-square{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top: -8px;
+}
+
+.fries-image-squares > .fries-image-square > .fries-image-text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 42px;
+}
+
+.fries-image-square > .fries-image-text h1{
+	color: #cea135;
+	margin-top: -20px;
+}
+
+.fries-image-square > .fries-image-text h1::before{
+	content: "Before psuedo"
+}
+
+.fries-image-square > .fries-image-text h1::after{
+	content: "After psuedo"
+}
+.space-around-fries{
+	height: 50px;
+	width: 100%;
+}
+
+
+
